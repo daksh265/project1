@@ -3,7 +3,7 @@ class wrapper3
     String i;
     void init()
     {
-        i="109";
+        i="string";
     }
     void wrap()
     {

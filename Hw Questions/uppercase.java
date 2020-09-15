@@ -1,3 +1,4 @@
+//This program takes the input in lower case and shows the output in upper case
 import java.util.Scanner;
 class uppercase
 {

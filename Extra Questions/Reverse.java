@@ -1,15 +1,12 @@
 // This program prints the reverse of the no given by the user
+import java.util.Scanner;
 class Reverse
 {
     int no; int rev; int rem;
-    Reverse()//This is a default constructor 
+    Reverse()//This is a constructor 
     {
-        no=0;
-    }
-    Reverse(int number)//This is a constructor that provides the input from the user
-    {
-        no=number;
-        rev=0;
+        Scanner sc=new Scanner(System.in);
+        no=sc.nextInt();
     }
     void find_reverse()
     {
@@ -26,8 +23,7 @@ class Reverse
     }
     public static void main()
     {
-        Reverse R1=new Reverse();
-        Reverse R2=new Reverse(1753);
+        Reverse R2=new Reverse();
         R2.find_reverse();
         R2.print();
     }

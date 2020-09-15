@@ -1,9 +1,9 @@
 //This is a simple program to find a factorial of the number
-//A factorial number is product of all positive integer less thhan or equal to the number given
+//A factorial number is product of all positive integer less than or equal to the number given
 import java.util.Scanner;
 class factorial
 {
-    int n,fact;
+    int n,fact,i;
     void input()
     {
         Scanner sc=new Scanner(System.in);
@@ -13,12 +13,14 @@ class factorial
     void init()
     {
         fact=1;
+        i=1;
     }
     void calc()//main method to calculate the factorial of a number
     {
-        for(int i=1;i<=n;i++)
+        while(i<=n)
         {
             fact=fact*i;
+            i++;
         }
     }
     void print()

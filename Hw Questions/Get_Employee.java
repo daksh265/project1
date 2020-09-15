@@ -1,6 +1,6 @@
 class Get_Employee
 {
-    public static void main(String Name,double Basic_Pay)
+    public static void main(String Name, double Basic_Pay)
     {
         Employee E1=new Employee();
         Employee E2=new Employee(Name, Basic_Pay);

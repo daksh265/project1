@@ -24,7 +24,7 @@ class question5
             case "alphabet":
             for(i=97;i<=n;i++) //This loop will help to print rows 
             {
-                for(b=97;b<=n-i+97;b++) //This loop will heelp to print the colums
+                for(b=97;b<=n-i+97;b++) //This loop will heelp to print the columns
                 {
                     System.out.print((char)b);
                 }

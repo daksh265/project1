@@ -1,16 +1,18 @@
+import java.util.Scanner;
 class Quadratic_Eq
 {
-    double A, B, C, x,y;
-    void init(double a, double b, double c)
+    double a, b, c, x,y;
+    void init()
     {
-        A=a;
-        B=b;
-        C=c;
+        Scanner sc=new Scanner(System.in);
+        a=sc.nextDouble();
+        b=sc.nextDouble();
+        c=sc.nextDouble();
     }
     void calc()
     {
-        x=(-B+Math.sqrt(Math.pow(B,2)-4*A*C))/(2*A);
-        y=(-B-Math.sqrt(Math.pow(B,2)-4*A*C))/(2*A);
+        x=(-b+Math.sqrt(Math.pow(b,2)-4*a*c))/(2*a);
+        y=(-b-Math.sqrt(Math.pow(b,2)-4*a*c))/(2*a);
     }
     void print()
     {
@@ -20,7 +22,7 @@ class Quadratic_Eq
     public static void main()
     {
         Quadratic_Eq obj=new Quadratic_Eq();
-        obj. init(3,5,-9);
+        obj. init();
         obj. calc();
         obj. print();
     }
